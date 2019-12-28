@@ -1,0 +1,43 @@
+.tku_tku60 {
+  width: 90%;
+  margin: 20px auto;
+}
+.tku_tku60 #menu {
+  float: left;
+  width: 20%;
+  height: 500px;
+  background-color: darkturquoise;
+}
+
+.tku_tku60 #section {
+  float: right;
+  width: 80%;
+  height: 500px;
+  background-color: rgb(152, 230, 230);
+}
+
+.tku_tku60 #section a {
+  position: relative;
+  margin: 50px;
+}
+
+.tku_tku60 #menu nav ul {
+  padding: 0px;
+}
+
+.tku_tku60 #menu nav li {
+  list-style-type: none;
+  margin: 25px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.tku_tku60 #menu nav a {
+  padding: 5px;
+  background-color: darksalmon;
+  color:white;
+}
+
+.tku_tku60 #menu nav a:hover {
+  background-color: crimson;
+}

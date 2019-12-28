@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>期末報告詳細介紹</title>
+    <!--bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .tab-content {
+            padding: 30px 10px;
+
+            font-size: 14px;
+            font-family: 微軟正黑體;
+
+            letter-spacing: 3.5px;
+
+            background-color: azure;
+            height: 100%;
+        }
+        a.nav-link {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!--tku demo navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: burlywood;">
+        <span class="navbar-brand mb-0 h1">Final Intro</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/tku/tku_index.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        MID_Project
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/tku/tku_index.html">TKU</a>
+                        <a class="dropdown-item" href="/tku/myclass/my_class.html">My Class</a>
+                        <a class="dropdown-item" href="/tku/myresume/my_resume.html">My Resume</a >
+                        <a class="dropdown-item" href="/tku/project_intro.html">MID_Project Intro</a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FIN_Project Intro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/dbdemo_class/classdb">Class demo(DB)</a>
+                </li>                
+                <li class="nav-item">
+                    <a class="nav-link" href="/dbdemo_temp/portfolio">Template table</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row py-5">
+            <div class="col">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" style="background-color:lightgreen; " id="tab1-tab" data-toggle="tab"
+                            href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Final Intro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="background-color: #ff9380;" id="tab2-tab" data-toggle="tab"
+                            href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Class Demo(DB)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="background-color:violet;" id="tab3-tab" data-toggle="tab"
+                            href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Template table</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <iframe class="embed-responsive-item" width=100% height=600px
+                                        src="#"></iframe>
+                                </div>
+                                <div class="col-md-4">
+                                    <p><strong>Final Project Intro頁面</strong>
+                                        <ul>
+                                                <li>使用分頁標籤nav-tabs方式依序介紹各畫面</li><br>
+                                                <li>並將各標籤內容區分成：<br> 左區塊嵌入原畫面以及右區塊介紹</li><br>
+                                            </ul>
+                                    </p>
+                                    <p>
+                                        而此頁面的Navbar連結依序為：
+                                        <ul style="list-style-type:square;">
+                                            <li>Home:模板首頁</li>
+                                            <li>MID_Project:期中報告內容</li>
+                                            <li>FIN_Project intro:<br>本頁(左嵌入框)</li>
+                                            <li>Class demo(DB):<br>以連接DB呈現期中前課堂實作統整</li>
+                                            <li>Template table:<br>以連接DB呈現Bootstrap模板之Portfolio頁面</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <iframe class="embed-responsive-item" width=100% height=700px
+                                        src="/dbdemo_class/classdb"></iframe>
+                                </div>
+                                <div class="col-md-4">
+                                    <p><strong>Class Demo(DB)頁面主要是分兩區塊</strong>
+                                        <ul>
+                                            <li>
+                                                左側以清單式導覽列搭配Scrollspy,作為右側錨點追蹤<br>
+                                                以及各項清單顏色對應連結後頁面之navbar顏色
+                                            </li>
+                                            <br>
+                                            <li>右側經由DB後端連結並以迴圈方式呈現Card條列式每週課程之DEMO簡介與按鈕連結到目標網頁,並搭配部分截圖可先了解實測畫面</li><br>
+                                            <li>其中Card類型統一以[圖片再上.文字在下]的配置</li><br>
+                                            <li>且Card中圖片增加了鼠標滑入放大效果並且也可點擊連結至相對應頁面</li><br>
+                                            <li>以及有使用[回到網頁最前端]的jqury,方便錨點追蹤後回到頂端再次點選左側清單</li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        而此頁面的Navbar為固定於上方<br>連結依序為：
+                                        <ul style="list-style-type:square;">
+                                            <li>Home:模板首頁</li>
+                                            <li>MID_Project:期中報告內容</li>
+                                            <li>FIN_Project intro:本頁</li>
+                                            <li>Class demo(DB):<br>左嵌入框</li>
+                                            <li>Template table:<br>以連接DB呈現Bootstrap模板之Portfolio頁面</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <iframe class="embed-responsive-item" width=100% height=500px
+                                        src="/tku/w01/intro.html"></iframe>
+                                </div>
+                                <div class="col-md-4">
+                                    <p><strong>Read More連結頁面</strong>
+                                        <ul>
+                                            <li>將之前的課堂demo之上方都有加Navbar切換至不同頁面</li><br>
+                                            <li>左嵌入框以week1 intro為例</li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        而此頁面的Navbar連結依序為：
+                                        <ul style="list-style-type:square;">
+                                            <li>Home:模板首頁</li>
+                                            <li>TKU:課堂DEMO</li>
+                                            <li>當週其他demo</li>
+                                            <li>FIN_Project:新增期末下拉選單</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <iframe class="embed-responsive-item" width=100% height=600px
+                                        src="/dbdemo_temp/portfolio"></iframe>
+                                </div>
+                                <div class="col-md-4">
+                                    <p><strong>Template table頁面</strong>
+                                        <ul>
+                                            <li>使用了期中<strong>Tangre</strong>模板中的Portfolio頁面之內容,來進行連接DB的動作</li><br>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        而此頁面的Navbar連結依序為：
+                                        <ul style="list-style-type:square;">
+                                            <li>Home:模板首頁</li>
+                                            <li>TKU:期中內容</li>
+                                            <li>DBDEMO:期末內容</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>

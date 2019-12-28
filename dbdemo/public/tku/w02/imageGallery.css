@@ -1,0 +1,36 @@
+body {
+  background-color: burlywood;
+}
+#tku_imageGallery #line3 img {
+  width: 30%;
+  margin: 1.66%; /*最外圍*/
+  float: left; /*往左靠*/
+}
+
+#tku_imageGallery #line4 img {
+  width: 22%;
+  margin: 1.5%;
+  float: left;
+}
+
+#tku_imageGallery #line5 img {
+  width: 17%;
+  margin: 1.5%;
+  float: left;
+}
+
+#tku_imageGallery .clearfix {
+  clear: both; /*把float截斷清掉 */
+}
+
+#tku_imageGallery p {
+  text-transform: uppercase; /*text改變字體*/
+  font-family: Arial, Helvetica, sans-serif; /*font字型*/
+  font-size: 20px;
+  font-weight: 600; /*粗細*/
+
+  width: 30%;
+  margin: 1.66%;
+  border-bottom: 2px solid #f1f1f1; /*邊框-底=底線*/
+  padding-bottom: 15px;
+}

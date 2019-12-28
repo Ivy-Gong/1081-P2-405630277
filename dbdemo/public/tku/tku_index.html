@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>課程實作蓋覽</title>
+    <!--bootstrap CSS-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- icon CSS -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <style>
+      #gotop {
+        position: fixed;
+        z-index: 90;
+        right: 30px;
+        bottom: 31px;
+        display: none;
+        width: 50px;
+        height: 50px;
+        background: #33b5e5;
+        line-height: 50px;
+        border-radius: 50%;
+        transition: all 0.5s;
+        text-align: center;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+          0 2px 10px 0 rgba(0, 0, 0, 0.12);
+      }
+
+      #gotop :hover {
+        background: #0099cc;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--tku demo navbar-->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top"
+      style="background-color: lightgreen;"
+    >
+      <span class="navbar-brand mb-0 h1">Class Demo</span>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tku_index.html">TKU</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./myclass/my_class.html">My Class</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./myresume/my_resume.html">My Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project_intro.html">MID_Project Intro</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="/tku/tku_index.html"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              FIN_Project
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/final_intro.html"
+                >FIN_Project Intro</a
+              >
+              <a class="dropdown-item" href="/dbdemo_class/classdb"
+                >Class demo(DB)</a
+              >
+              <a class="dropdown-item" href="/dbdemo_temp/portfolio"
+                >Template table</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <br /><br />
+    <!--tku demo-->
+    <div
+      data-spy="scroll"
+      data-target="#list-example"
+      data-offset="0"
+      class="scrollspy-example"
+    >
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-3">
+            <div id="list-example" class="list-group">
+              <a class="list-group-item list-group-item-action" href="#week1"
+                >Week 1</a
+              >
+              <a class="list-group-item list-group-item-action" href="#week2"
+                >Week 2</a
+              >
+              <a class="list-group-item list-group-item-action" href="#week3"
+                >Week 3</a
+              >
+              <a class="list-group-item list-group-item-action" href="#week4"
+                >Week 4</a
+              >
+              <a class="list-group-item list-group-item-action" href="#week5"
+                >Week 5</a
+              >
+              <a class="list-group-item list-group-item-action" href="#week6"
+                >Week 6</a
+              >
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div id="week1" style="margin: 20px auto;">
+              <h2>Week1</h2>
+              <div class="card-deck " style="margin: 30px auto;">
+                <div class="card" style="max-width: 400px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img
+                        src="./tku_img/Intro_img.PNG"
+                        class="card-img"
+                        alt="Intro_img"
+                      />
+                    </div>
+
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h4 class="card-title">Intro</h4>
+                        <p class="card-text" style="font-family: 微軟正黑體; ">
+                          自己寫出第一個簡單的網頁
+                        </p>
+                        <a class="btn btn-danger" href="./w01/intro.html"
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="max-width: 400px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img
+                        src="./tku_img/Pokemon_img.PNG"
+                        class="card-img"
+                        alt="Pokemon_img"
+                      />
+                    </div>
+
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h4 class="card-title">Pokemon</h4>
+                        <p class="card-text" style="font-family: 微軟正黑體; ">
+                          簡單Html表格實作
+                        </p>
+                        <a class="btn btn-danger" href="./w01/pokemon.html"
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="week2" style="margin: 20px auto;">
+              <h2>Week2</h2>
+              <div class="card-deck " style="margin: 30px auto;">
+                <div class="card" style="max-width: 400px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img
+                        src="./tku_img/imageGallery_img.PNG"
+                        style="height: 100%;"
+                        class="card-img"
+                        alt="imageGallery_img"
+                      />
+                    </div>
+
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h4 class="card-title">ImageGallery</h4>
+                        <p class="card-text" style="font-family: 微軟正黑體; ">
+                          圖片於網頁中版面配置
+                        </p>
+                        <a
+                          class="btn btn-success"
+                          href="./w02/imageGallery.html"
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="max-width: 400px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img
+                        src="./tku_img/Blog_img.PNG"
+                        style="height: 100%;"
+                        class="card-img"
+                        alt="Blog_img"
+                      />
+                    </div>
+
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h4 class="card-title">Blog</h4>
+                        <p class="card-text" style="font-family: 微軟正黑體; ">
+                          初學CSS使用
+                        </p>
+                        <a class="btn btn-success" href="./w02/blog.html"
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="week3" style="margin: 20px auto;">
+              <h2>Week3</h2>
+              <div class="card" style="margin: 30px auto; max-width: 400px;">
+                <img
+                  src="./tku_img/Div_img.PNG"
+                  class="card-img-top"
+                  alt="Div_img"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Div</h4>
+                  <p class="card-text" style="font-family: 微軟正黑體; ">
+                    學習網頁區塊配置與初學JavaScript
+                  </p>
+                  <a class="btn btn-info" href="./w03/div.html">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div id="week4" style="margin: 20px auto;">
+              <h2>Week4</h2>
+              <div class="card-deck " style="margin: 30px auto;">
+                <div class="card" style="max-width: 400px;">
+                  <img
+                    src="./tku_img/tku60_img.PNG"
+                    class="card-img-top"
+                    alt="tku60_img"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">TKU60</h4>
+                    <p class="card-text" style="font-family: 微軟正黑體; ">
+                      多個影片同時嵌入於網頁中
+                    </p>
+                    <a class="btn btn-secondary" href="./w04/tku60.html"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+                <div class="card" style="max-width: 400px;">
+                  <img
+                    src="./tku_img/nav_img.PNG"
+                    class="card-img-top"
+                    alt="nav_img"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Nav</h4>
+                    <p class="card-text" style="font-family: 微軟正黑體; ">
+                      將前幾週作品以[導覽]呈現
+                    </p>
+                    <a class="btn btn-secondary" href="./w04/nav.html"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="week5" style="margin: 20px auto;">
+              <h2>Week5</h2>
+              <div class="card-deck " style="margin: 30px auto;">
+                <div class="card" style="max-width: 400px;">
+                  <img
+                    src="./tku_img/navbar_img.PNG"
+                    class="card-img-top"
+                    alt="navbar_img"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Navbar</h4>
+                    <p class="card-text" style="font-family: 微軟正黑體; ">
+                      網頁上方導覽列應用
+                    </p>
+                    <a class="btn btn-primary" href="./w05/w05-navbar/nav.html"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+                <div class=" card" style="max-width: 400px;">
+                  <img
+                    src="./tku_img/bootstap_img.PNG"
+                    class="card-img-top"
+                    alt="nav_img"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Bootstrap</h4>
+                    <p class="card-text">試套用Bootstrap模板於不同頁面做切換</p>
+                    <a
+                      class="btn btn-primary"
+                      href="https://ivy-gong.github.io/1081-1A-405630277/w06/w06-eiser/index.html"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="week6" style="margin: 20px auto;">
+              <h2>Week6</h2>
+              <div class="card" style="margin: 30px auto; max-width: 400px;">
+                <img
+                  src="./tku_img/gitpage_img.PNG"
+                  class="card-img-top"
+                  alt="Div_img"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Git page</h4>
+                  <p class="card-text" style="font-family: 微軟正黑體; ">
+                    將網頁與其他資料上傳到git page
+                  </p>
+                  <a
+                    class="btn btn-success"
+                    href="https://ivy-gong.github.io/1081-1A-405630277/"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" id="gotop">
+      <i class="fas fa-angle-double-up"></i>
+    </a>
+
+    <!--bootstrap JS-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--回最前端 參考https://edwardzou.blogspot.com/2018/03/jquery-goTop.html-->
+    <script type="text/javascript">
+      $(function() {
+        $("#gotop").click(function() {
+          $("html,body").animate({ scrollTop: 0 }, "slow");
+          return false;
+        });
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 300) {
+            $("#gotop").fadeIn();
+          } else {
+            $("#gotop").fadeOut();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

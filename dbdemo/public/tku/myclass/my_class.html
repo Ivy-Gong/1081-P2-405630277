@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>龔苡甄的課表</title>
+
+    <!--bootstrap CSS-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!--自訂課表 CSS-->
+    <link rel="stylesheet" href="my_class.css" />
+  </head>
+
+  <body>
+    <!--myclass navbar-->
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #ff9380;"
+    >
+      <span class="navbar-brand mb-0 h1">My class</span>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="../../index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../tku_index.html">TKU</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./my_class.html">My Class</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../myresume/my_resume.html">My Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../project_intro.html"
+              >MID_Project Intro</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="/tku/tku_index.html"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              FIN_Project
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/final_intro.html"
+                >FIN_Project Intro</a
+              >
+              <a class="dropdown-item" href="/dbdemo_class/classdb"
+                >Class demo(DB)</a
+              >
+              <a class="dropdown-item" href="/dbdemo_temp/portfolio"
+                >Template table</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--課表-->
+    <div id="my_class">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card  border-success">
+              <div class="card-header text-white bg-success border-success">
+                系必修
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  企業倫理<br />資訊技術／管理專業認證<br />專題製作
+                </p>
+              </div>
+              <div class="card-footer border-success ">
+                共 4 學分
+              </div>
+            </div>
+            <div class="card border-info">
+              <div class="card-header text-white border-info bg-info">
+                系選修
+              </div>
+              <div class="card-body border-info">
+                <p class="card-text">
+                  專業排版與設計<br />網路實作與規劃<br />企業雲端應用趨勢與實務
+                  <br />雲端服務架構實務<br />雲端程式資料庫開發<br />企業資訊科技應用實務
+                </p>
+              </div>
+              <div class="card-footer border-info">
+                共 12 學分
+              </div>
+            </div>
+            <div class="card border-warning">
+              <div class="card-header text-white border-warning bg-warning">
+                通識/體育/系外選
+              </div>
+              <div class="card-body border-warning">
+                <p class="card-text">
+                  網頁程式設計<br />女生體育－水上活動游泳初級<br />日文(三)
+                </p>
+              </div>
+              <div class="card-footer border-warning">
+                共 4 學分
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <table class="table table-bordered ">
+              <thead>
+                <tr>
+                  <th scope="col">
+                    <div class="out">
+                      <p>星期</p>
+                      <em>節次</em>
+                    </div>
+                  </th>
+                  <th style="background-color:khaki" scope="col">一</th>
+                  <th style="background-color:khaki" scope="col">二</th>
+                  <th style="background-color:khaki" scope="col">三</th>
+                  <th style="background-color:khaki" scope="col">四</th>
+                  <th style="background-color:khaki" scope="col">五</th>
+                  <th style="background-color: lightskyblue" scope="col">
+                    時間
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th style="background-color:lightgreen" scope="row">1</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td style="text-align: center;background-color:lightblue;">
+                    8:10<br />|<br />9:00
+                  </td>
+                </tr>
+                <tr>
+                  <th style="background-color:lightgreen" scope="row">2</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td style="text-align: center;background-color:lightblue;">
+                    9:10<br />|<br />10:00
+                  </td>
+                </tr>
+                <tr>
+                  <th style="background-color:lightgreen" scope="row">3</th>
+                  <td rowspan="2" style="background-color:plum; ">
+                    資管三<br />
+                    <a
+                      href="http://ap09.emis.tku.edu.tw/108_1/108_1_2770.PDF"
+                      target="_blank"
+                      >專業排版與設計</a
+                    >
+                    <br />B217
+                  </td>
+                  <td></td>
+                  <td rowspan="2" style="background-color:plum">
+                    <a
+                      href="http://ap09.emis.tku.edu.tw/108_1/108_1_2091.PDF"
+                      target="_blank"
+                      >女生體育－水上活動游泳初級</a
+                    >
+                    <br />游泳館S1
+                  </td>
+                  <td rowspan="2" style="background-color:plum">
+                    共同科<br />
+                    <a
+                      href="http://ap09.emis.tku.edu.tw/108_1/108_1_1905.PDF"
+                      target="_blank"
+                      >日文(三)</a
+                    >
+                    <br />T605
+                  </td>
+                  <td></td>
+                  <td style="text-align: center;background-color:lightblue;">
+                    10:10<br />|<br />11:00
+                  </td>
+                </tr>
+                <tr>
+                  <th style="background-color:lightgreen" scope="row">4</th>
+                  <td></td>
+                  <td></td>
+                  <td style="text-align: center;background-color:lightblue;">
+                    11:10<br />|<br />12:00
+                  </td>
+                </tr>
+                <tr>
+                  <th style="background-color:lightgreen" scope="row">5</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td style="text-align: center;background-color:lightblue;">
+                    12:10<br />|<br />13:00
+                  </td>
+                </tr>
+                <tr>
+                  <th style="background-color:lightgreen" scope="row">6</th>
+                  <td rowspan="2" style="background-color:plum">
+                    資管三<br />
+                    <a
+                      href="http://ap09.emis.tku.edu.tw/108_1/108_1_2771.PDF"
+                      target="_blank"
+                      >網路實作與規劃</a
+                    >
+                    <br />B615
+                  </td>
+                  <td rowspan="2" style="background-color:plum">
+                    資訊教育學門<br />
+                    <a
+                      href="http://ap09.emis.tku.edu.tw/108_1/108_1_3320.PDF"
+                      target="_blank"
+                      >網頁程式設計</a
+                    >
+                    <br />B218
+                  </td>
+                  <td rowspan="2" style="background-color:plum">
+                    資管四<br />
+                    <a
+                      href="http://ap09.emis.tku.edu.tw/108_1/108_1_2776.PDF"
+                      target="_blank"
+                      >企業倫理</a
+                    >
+                    <br />B501
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td style="text-align: center;background-color:lightblue;">
+                    13:10<br />|<br />14:00
+                  </td>
+                </tr>
+                <tr>
+                  <th style="background-color:lightgreen" scope="row">7</th>
+                  <td></td>
+                  <td></td>
+                  <td style="text-align: center;background-color:lightblue;">
+                    14:10<br />|<br />15:00
+                  </td>
+                </tr>
+                <tr>
+                  <th style="background-color:lightgreen" scope="row">8</th>
+                  <td></td>
+                  <td rowspan="2" style="background-color:plum">
+                    資管四<br />
+                    <a
+                      href="http://ap09.emis.tku.edu.tw/108_1/108_1_2786.PDF"
+                      target="_blank"
+                      >企業雲端應用趨勢與實務</a
+                    >
+                    <br />B113
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td style="text-align: center;background-color:lightblue;">
+                    15:10<br />|<br />16:00
+                  </td>
+                </tr>
+                <tr>
+                  <th style="background-color:lightgreen" scope="row">9</th>
+                  <td></td>
+                  <td></td>
+                  <td rowspan="2" style="background-color:plum">
+                    資管四<br />
+                    <a
+                      href="http://ap09.emis.tku.edu.tw/108_1/108_1_2790.PDF"
+                      target="_blank"
+                      >雲端服務架構實務</a
+                    >
+                    <br />B113
+                  </td>
+                  <td></td>
+                  <td style="text-align: center;background-color:lightblue;">
+                    16:10<br />|<br />17:00
+                  </td>
+                </tr>
+                <tr>
+                  <th style="background-color:lightgreen" scope="row">10</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td style="text-align: center;background-color:lightblue;">
+                    17:10<br />|<br />18:00
+                  </td>
+                </tr>
+                <tr>
+                  <th style="background-color:lightgreen" scope="row">11</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td style="background-color:plum">
+                    資管四<br />
+                    <a
+                      href="http://ap09.emis.tku.edu.tw/108_1/108_1_2787.PDF"
+                      target="_blank"
+                      >資訊技術／管理專業認證</a
+                    >
+                    <br />B712
+                  </td>
+                  <td></td>
+                  <td style="text-align: center;background-color:lightblue;">
+                    18:10<br />|<br />19:00
+                  </td>
+                </tr>
+                <tr>
+                  <th style="background-color:lightgreen" scope="row">12</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td style="text-align: center;background-color:lightblue;">
+                    19:10<br />|<br />20:00
+                  </td>
+                </tr>
+                <tr>
+                  <th style="background-color:lightgreen" scope="row">13</th>
+                  <td></td>
+                  <td rowspan="2" style="background-color:plum">
+                    資管三<br />
+                    <a
+                      href="http://ap09.emis.tku.edu.tw/108_1/108_1_2772.PDF"
+                      target="_blank"
+                      >雲端程式資料庫開發</a
+                    >
+                    <br />B113
+                  </td>
+                  <td></td>
+                  <td rowspan="2" style="background-color:plum">
+                    資管四<br />
+                    <a
+                      href="http://ap09.emis.tku.edu.tw/108_1/108_1_2778.PDF"
+                      target="_blank"
+                      >企業資訊科技應用實務</a
+                    >
+                    <br />B428
+                  </td>
+                  <td></td>
+                  <td style="text-align: center;background-color:lightblue;">
+                    20:10<br />|<br />21:00
+                  </td>
+                </tr>
+                <tr>
+                  <th style="background-color:lightgreen" scope="row">14</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td style="text-align: center;background-color:lightblue;">
+                    21:10<br />|<br />22:00
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--bootstrap JS-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>期中報告詳細介紹</title>
+    <!--bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .tab-content {
+            padding: 30px 10px;
+
+            font-size: 16px;
+            font-family: 微軟正黑體;
+
+            letter-spacing: 3.5px;
+
+            background-color: azure;
+            height: 100%;
+        }
+        a.nav-link {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!--tku demo navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: burlywood;">
+        <span class="navbar-brand mb-0 h1">Mid Intro</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tku_index.html">TKU</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./myclass/my_class.html">My Class</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./myresume/my_resume.html">My Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="project_intro.html">MID_Project Intro</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="/tku/tku_index.html"
+                      id="navbarDropdownMenuLink"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      FIN_Project
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="/final_intro.html"
+                        >FIN_Project Intro</a
+                      >
+                      <a class="dropdown-item" href="/dbdemo_class/classdb"
+                        >Class demo(DB)</a
+                      >
+                      <a class="dropdown-item" href="/dbdemo_temp/portfolio"
+                        >Template table</a
+                      >
+                    </div>
+                  </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row py-5">
+            <div class="col">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" style="background-color:lightgreen; " id="tab1-tab" data-toggle="tab"
+                            href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">TKU Index</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="background-color: #ff9380;" id="tab2-tab" data-toggle="tab"
+                            href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">My Class</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="background-color:violet;" id="tab3-tab" data-toggle="tab"
+                            href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">My Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="background-color:burlywood;" id="tab4-tab" data-toggle="tab"
+                            href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">MID_Project Intro</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <iframe class="embed-responsive-item" width=100% height=600px
+                                        src="tku_index.html"></iframe>
+                                </div>
+                                <div class="col-md-4">
+                                    <p><strong>tku_index頁面主要是分兩區塊</strong>
+                                        <ul>
+                                            <li>左側以清單式導覽列搭配Scrollspy,作為右側錨點追蹤</li><br>
+                                            <li>右側以Card條列式呈現每週課程之DEMO簡介與按鈕連結到目標網頁,並搭配部分截圖可先了解實測畫面</li><br>
+                                            <li>其中Card類型有[圖片在左.文字在右]與[圖片再上.文字在下]的配置</li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        而此頁面的Navbar為固定於上方<br>連結依序為：
+                                        <ul style="list-style-type:square;">
+                                            <li>Home:模板首頁</li>
+                                            <li>TKU:左嵌入框</li>
+                                            <li>My Class:課表頁面</li>
+                                            <li>My Resume:履歷表</li>
+                                            <li>Project intro:本頁</li>
+                                        </ul>
+                                        以及有使用[回到網頁最前端]的jqury,方便錨點追蹤後回到頂端再次點選左側清單
+                                    </p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <iframe class="embed-responsive-item" width=100% height=500px
+                                        src="./w01/intro.html"></iframe>
+                                </div>
+                                <div class="col-md-4">
+                                    <p><strong>Read More連結頁面</strong>
+                                        <ul>
+                                            <li>將之前的課堂demo之上方都有加Navbar切換至不同頁面</li><br>
+                                            <li>左嵌入框以week1 intro為例</li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        而此頁面的Navbar連結依序為：
+                                        <ul style="list-style-type:square;">
+                                            <li>Home:模板首頁</li>
+                                            <li>TKU:課堂DEMO</li>
+                                            <li>當週其他demo</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <iframe class="embed-responsive-item" width=100% height=600px
+                                        src="./myclass/my_class.html"></iframe>
+                                </div>
+                                <div class="col-md-4">
+                                    <p><strong>My Class頁面主要也是分兩區塊</strong>
+                                        <ul>
+                                            <li>左側以Card條列式作為課程學分分配蓋覽</li><br>
+                                            <li>
+                                                右側則以Table方式呈現課表內容,總體大項目以不同顏色做配置<br>
+                                            </li><br>
+                                            <li>其中,科目名稱皆使用超連結連至課程大綱,並以另開啟視窗方式顯示</li><br>
+                                            <li>有另外設計超連結字型色彩,<u>但不知為何有些超連結顏色改不了,找不到錯在哪...</u></li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        而此頁面的Navbar連結依序為：
+                                        <ul style="list-style-type:square;">
+                                            <li>Home:模板首頁</li>
+                                            <li>TKU:課堂DEMO</li>
+                                            <li>My Class:左嵌入框</li>
+                                            <li>My Resume:履歷表</li>
+                                            <li>Project intro:本頁</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <iframe class="embed-responsive-item" width=100% height=600px
+                                        src="./myresume/my_resume.html"></iframe>
+                                </div>
+                                <div class="col-md-4">
+                                    <p><strong>My Resume頁面</strong>
+                                        <ul>
+                                            <li>套用<strong>Browny</strong>此模板後,加以編排修改做變化與增加不同內容</li><br>
+                                            <li>在各大標題前後加入icon</li><br>
+                                        </ul>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <iframe class="embed-responsive-item" width=100% height=600px
+                                            src="#"></iframe>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p><strong>Project Intro頁面</strong>
+                                            <ul>
+                                                <li>使用分頁標籤nav-tabs方式依序介紹各畫面</li><br>
+                                                <li>並將各標籤內容區分成：<br> 左區塊嵌入原畫面以及右區塊介紹</li><br>
+                                            </ul>
+                                        </p>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>
